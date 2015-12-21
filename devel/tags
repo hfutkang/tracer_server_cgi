@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARRAY_SIZE	tracercmd.c	24;"	d	file:
+COMMANDS_H	commands.h	2;"	d
+DBACCESS_H	dbaccess.h	2;"	d
+KEY_LENGTH	commands.c	6;"	d	file:
+MAX_LONGTITUDE_LENGTH	dbaccess.h	4;"	d
+MAX_PARAM_NUM	commands.c	14;"	d	file:
+MAX_SQL_LENGTH	dbaccess.c	43;"	d	file:
+SQL_QUERY_ERROR_TRY	dbaccess.c	44;"	d	file:
+VALUE_LENGTH	commands.c	7;"	d	file:
+activate	commands.c	/^int activate()$/;"	f
+activated	dbaccess.h	/^	char activated[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:device_data
+add_device	dbaccess.c	/^int add_device(const char *ID,const char *Master,const char *Password,const char *Activated)$/;"	f
+add_position	dbaccess.c	/^int add_position(const char *clientid, const char* time, const char *longitude,$/;"	f
+assign_LBS_data	dbaccess.c	/^static void assign_LBS_data(struct lbs_data* ld, const MYSQL_ROW row)$/;"	f	file:
+assign_device_data	dbaccess.c	/^static void assign_device_data(struct device_data* dd, const MYSQL_ROW row)$/;"	f	file:
+assign_edition_data	dbaccess.c	/^static void  assign_edition_data(struct edition_info* ei, const MYSQL_ROW row)$/;"	f	file:
+assign_position_data	dbaccess.c	/^static void assign_position_data(struct position_data* pd, const MYSQL_ROW row)$/;"	f	file:
+bat	dbaccess.h	/^	char bat[5];\/\/add by hzc$/;"	m	struct:position_data
+changes	dbaccess.h	/^	char changes[200];$/;"	m	struct:edition_info
+cid	dbaccess.h	/^	char cid[10];$/;"	m	struct:lbs_data
+command	tracercmd.c	/^	char* command;$/;"	m	struct:command_processor	file:
+command_processor	tracercmd.c	/^struct command_processor {$/;"	s	file:
+command_processors	tracercmd.c	/^struct command_processor command_processors[] = {$/;"	v	typeref:struct:command_processor
+device_data	dbaccess.h	/^struct device_data {$/;"	s
+edition_info	dbaccess.h	/^struct edition_info {$/;"	s
+getLBS	commands.c	/^int getLBS()$/;"	f
+get_LBS	dbaccess.c	/^int get_LBS(const char* id, struct lbs_data* ld)$/;"	f
+get_device_info	dbaccess.c	/^int get_device_info(const char*clientid, struct device_data* dd)$/;"	f
+get_key_value	commands.c	/^static int get_key_value(char* str, struct key_value* kv)$/;"	f	file:
+get_last_edition	dbaccess.c	/^int get_last_edition(struct edition_info* ei)$/;"	f
+get_last_positon	dbaccess.c	/^int get_last_positon(const char*clientid, struct position_data* pd)$/;"	f
+get_param_value	commands.c	/^char* get_param_value(const char* key)$/;"	f
+get_postions	dbaccess.c	/^int get_postions(const char* clientid, const char* starttime, const char* endtime, struct position_data *pd, int max_num)$/;"	f
+get_value	commands.c	/^static char* get_value(struct key_value kvs[], const char* key)$/;"	f	file:
+getinfo	commands.c	/^int getinfo()$/;"	f
+getlastedition	commands.c	/^int getlastedition()$/;"	f
+getposition	commands.c	/^int getposition()$/;"	f
+getpositions	commands.c	/^int getpositions()$/;"	f
+init_dbconnect	dbaccess.c	/^static int init_dbconnect()$/;"	f	file:
+init_param	commands.c	/^int init_param(char* param)$/;"	f
+initialized	dbaccess.c	/^static int initialized = 0;$/;"	v	file:
+key	commands.c	/^	char key[KEY_LENGTH];$/;"	m	struct:key_value	file:
+key_value	commands.c	/^struct key_value {$/;"	s	file:
+key_value_array	commands.c	/^static struct key_value key_value_array[MAX_PARAM_NUM];$/;"	v	typeref:struct:key_value	file:
+lac	dbaccess.h	/^	char lac[10];$/;"	m	struct:lbs_data
+latitude	dbaccess.h	/^	char latitude[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:position_data
+lbs_data	dbaccess.h	/^struct lbs_data {$/;"	s
+longitude	dbaccess.h	/^	char longitude[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:position_data
+main	tracercmd.c	/^int main()$/;"	f
+master	dbaccess.h	/^	char master[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:device_data
+master	dbaccess.h	/^	char master[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:position_data
+mcc	dbaccess.h	/^	char mcc[5];$/;"	m	struct:lbs_data
+mnc	dbaccess.h	/^	char mnc[5];$/;"	m	struct:lbs_data
+mysql	dbaccess.c	/^static MYSQL mysql;$/;"	v	file:
+name	dbaccess.h	/^	char name[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:edition_info
+output_LBS	commands.c	/^static void output_LBS(const char* id, const struct lbs_data *ld)$/;"	f	file:
+output_device_info	commands.c	/^static void output_device_info(const char* clientid, const struct device_data *dd)$/;"	f	file:
+output_edition_info	commands.c	/^static void output_edition_info(const struct edition_info *ei)$/;"	f	file:
+output_position	commands.c	/^static void output_position(const char* clientid, const struct position_data *pd)$/;"	f	file:
+passworld	dbaccess.h	/^	char passworld[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:device_data
+position_data	dbaccess.h	/^struct position_data {$/;"	s
+postion_manager	dbaccess.c	/^struct postion_manager {$/;"	s	file:
+proc	tracercmd.c	/^	processor_t proc;$/;"	m	struct:command_processor	file:
+process_command	tracercmd.c	/^static int process_command(char* qstr)$/;"	f	file:
+processor_t	tracercmd.c	/^typedef int (*processor_t)(void);$/;"	t	file:
+reportLBS	commands.c	/^int reportLBS()$/;"	f
+reportposition	commands.c	/^int reportposition()$/;"	f
+sep_key_value	commands.c	/^static int sep_key_value(char* param, struct key_value kvs[], int num)$/;"	f	file:
+time	dbaccess.h	/^	char time[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:lbs_data
+time	dbaccess.h	/^	char time[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:position_data
+update_LBS	dbaccess.c	/^int update_LBS(const char *id, const char* mnc, const char *mcc, const char *cid, const char *lac, const char *time)$/;"	f
+updatetime	dbaccess.h	/^	char updatetime[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:edition_info
+url	dbaccess.h	/^	char url[100];$/;"	m	struct:edition_info
+value	commands.c	/^	char value[VALUE_LENGTH];$/;"	m	struct:key_value	file:
+version	dbaccess.h	/^	char version[MAX_LONGTITUDE_LENGTH];$/;"	m	struct:edition_info
